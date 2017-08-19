@@ -26,7 +26,7 @@ public class MaxSumInNonAdjacent {
         int exclusiveSum = 0;
 
         for (int i =1; i < len; i++){
-            int sumIncludingThis = exclusiveSum + arr[i]; //need to store the value in some variable 
+            int sumIncludingThis = exclusiveSum + arr[i]; //need to store the value in some variable
             exclusiveSum = Math.max(inclusiveSum, exclusiveSum);
             inclusiveSum = sumIncludingThis;
         }
